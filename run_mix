@@ -24,7 +24,7 @@ mix local.hex --force --if-missing
 mix local.rebar --force --if-missing
 
 if [ ! -d "elixir-app" ]; then
-  git clone https://github.com/elixir-desktop/desktop-example-app.git elixir-app
+  git clone -b feature/take-a-pickture https://github.com/RyoWakabayashi/elixir-desktop-camera-20230305.git elixir-app
 fi
 
 # using the right runtime versions

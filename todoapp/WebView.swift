@@ -27,6 +27,7 @@ final class WebView: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
         configuration.limitsNavigationsToAppBoundDomains = true
         configuration.preferences = preferences
         configuration.defaultWebpagePreferences = page
+        configuration.allowsInlineMediaPlayback = true
         
         webview = WKWebView(frame: CGRect.zero, configuration: configuration)
         // webView.navigationDelegate = context.coordinator
