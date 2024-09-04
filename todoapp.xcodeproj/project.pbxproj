@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86055D042A5E9A03001649DA /* liberlang.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB3384628B396F7001E8DC7 /* liberlang.xcframework */; };
+		86055D052A5E9A03001649DA /* liberlang.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECB3384628B396F7001E8DC7 /* liberlang.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		86055D062A5E9A72001649DA /* ZIPFoundation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC8A1FC62702233000054F1C /* ZIPFoundation.xcframework */; };
+		86055D072A5E9A72001649DA /* ZIPFoundation.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC8A1FC62702233000054F1C /* ZIPFoundation.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EC01B27228D9F1000067BAEE /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC01B27128D9F1000067BAEE /* WebViewController.swift */; };
 		EC712AB026F6964C0066E483 /* TodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC712AAF26F6964C0066E483 /* TodoApp.swift */; };
 		EC712AB226F6964C0066E483 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC712AB126F6964C0066E483 /* ContentView.swift */; };
@@ -17,9 +21,6 @@
 		EC8A1FC92702328F00054F1C /* app.zip in Resources */ = {isa = PBXBuildFile; fileRef = EC8A1FC82702328F00054F1C /* app.zip */; };
 		EC8A1FD12704E9AB00054F1C /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8A1FD02704E9AB00054F1C /* WebView.swift */; };
 		EC90CFEF273D772900C9A3F3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EC90CFEE273D772900C9A3F3 /* README.md */; };
-		ECA856FF28DC70CA00CF6488 /* ZIPFoundation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC8A1FC62702233000054F1C /* ZIPFoundation.xcframework */; };
-		ECA8570028DC70CA00CF6488 /* ZIPFoundation.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC8A1FC62702233000054F1C /* ZIPFoundation.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		ECB3384728B396F7001E8DC7 /* liberlang.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB3384628B396F7001E8DC7 /* liberlang.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,7 +30,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				ECA8570028DC70CA00CF6488 /* ZIPFoundation.xcframework in Embed Frameworks */,
+				86055D072A5E9A72001649DA /* ZIPFoundation.xcframework in Embed Frameworks */,
+				86055D052A5E9A03001649DA /* liberlang.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,14 +62,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECA856FF28DC70CA00CF6488 /* ZIPFoundation.xcframework in Frameworks */,
-				ECB3384728B396F7001E8DC7 /* liberlang.xcframework in Frameworks */,
+				86055D062A5E9A72001649DA /* ZIPFoundation.xcframework in Frameworks */,
+				86055D042A5E9A03001649DA /* liberlang.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		86055D022A5E99F7001649DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EC712AA326F6964C0066E483 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +88,7 @@
 				EC712AAE26F6964C0066E483 /* todoapp */,
 				EC712AAD26F6964C0066E483 /* Products */,
 				EC8A1FA426FE49C900054F1C /* example-Bridging-Header.h */,
+				86055D022A5E99F7001649DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,7 +162,7 @@
 				};
 			};
 			buildConfigurationList = EC712AA726F6964C0066E483 /* Build configuration list for PBXProject "todoapp" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
